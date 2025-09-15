@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Chat con mensaje prellenado</title>
+
+  <!-- Snippet oficial de Infobip para el widget -->
+  <script>
+    (function(I,n,f,o,b,i,p){
+      I[b]=I[b]||function(){(I[b].q=I[b].q||[]).push(arguments)};
+      I[b].t=1*new Date();i=n.createElement(f);i.async=1;i.src=o;
+      p=n.getElementsByTagName(f)[0];p.parentNode.insertBefore(i,p)
+    })(window,document,'script','https://livechat.infobip.com/widget.js','liveChat');
+
+    // Inicializar el widget con tu keyId real
+    liveChat('init', 'dc801292-c529-45e5-bc19-d1322890aaee');
+  </script>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 3rem;
+      text-align: center;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      background-color: #e63946;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #d62839;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>¿Necesitas ayuda?</h1>
+  <p>Haz clic en el botón para iniciar el chat con un mensaje automático.</p>
+
+  <button onclick="enviarChat()">Cotiza tu seguro</button>
+
+  <script>
+    function enviarChat() {
+      // Enviar mensaje predeterminado y abrir el widget
+      liveChat('sendMessage', 'Hola, quiero cotizar un seguro por favor');
+      liveChat('open');
+    }
+  </script>
+</body>
+</html>
