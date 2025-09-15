@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prueba de widget</title>
+  <meta charset="UTF-8">
+  <title>Prueba Widget Infobip</title>
+
+  <!-- SNIPPET DE INFOBIP -->
+  <script>
+    (function(I,n,f,o,b,i,p){
+      I[b]=I[b]||function(){(I[b].q=I[b].q||[]).push(arguments)};
+      I[b].t=1*new Date();i=n.createElement(f);i.async=1;i.src=o;
+      p=n.getElementsByTagName(f)[0];p.parentNode.insertBefore(i,p)
+    })(window,document,'script','https://livechat.infobip.com/widget.js','liveChat');
+
+    liveChat('init', 'dc801292-c529-45e5-bc19-d1322890aaee'); // <-- aquí tu KEYID real
+  </script>
+
 </head>
 <body>
-  <h1>👋 Hola desde GitHub Pages</h1>
-
-  <p>Aquí va tu widget de Infobip ↓</p>
-
-  <!-- Ejemplo: insertamos un Flow con script -->
-  <script src="https://URL_DEL_WIDGET.js"></script>
-
+  <h1>Probando el Widget de Infobip</h1>
+  <p>Deberías ver el ícono de chat abajo a la derecha.</p>
 </body>
 </html>
