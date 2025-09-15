@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Prueba Widget Infobip</title>
+
+  <!-- SNIPPET DE INFOBIP -->
+  <script>
+(function(I,n,f,o,b,i,p){
+I[b]=I[b]||function(){(I[b].q=I[b].q||[]).push(arguments)};
+I[b].t=1*new Date();i=n.createElement(f);i.async=1;i.src=o;
+p=n.getElementsByTagName(f)[0];p.parentNode.insertBefore(i,p)})
+(window,document,'script','https://livechat.infobip.com/widget.js','liveChat');
+
+liveChat('init', '805a2319-8f0c-4c20-99f2-b3679418d084');
+</script>
+
+<!-- FIN DE SNIPPET -->
+</head>
+<body>
+  <h1>Probando el Widget de Infobip</h1>
+  <p>Deberías ver el ícono de chat abajo a la derecha.</p>
+</body>
+</html>
